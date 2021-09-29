@@ -1,0 +1,15 @@
+
+Estos son los pasos para subir los  nuevos archivos github
+1. git status //revisa el estado de los ficheros despues de cada cambio
+
+2. git add nombre_del_archivo.algo //agregar para ser commitiado
+   git add . //agrega todos los cambios
+3. git commit -m "se sube el fichero ficheroPrueba.txt "
+
+4.git push -u origin main
+
+
+>git log
+
+>git checkout -- .
+
