@@ -1,4 +1,3 @@
-Fichero para desarrollar el proyecto
 Nombre de los integrantes del grupo:
 -Jaime Prieto Palomar
 -ArturoPorrasMora
