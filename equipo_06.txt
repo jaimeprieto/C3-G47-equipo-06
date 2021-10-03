@@ -1,3 +1,5 @@
+Enlace al GitHub del grupo 6: https://github.com/jaimeprieto/C3-G47-equipo-06.git
+
 Nombre de los integrantes del grupo:
 -Jaime Prieto Palomar
 -ArturoPorrasMora
