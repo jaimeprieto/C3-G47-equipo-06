@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+        <!-- Bootstrap CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="/css/carousel.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icono/favicon-16x16.png">
+
+
+        <title>Shop-PC</title>
+    </head>
+    <body>
+        <header>
+            <span class="border border-primary border-5 rounded-pill">
+              <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
+                <div class="container-fluid">
+                  <img src="imagenes/log_banner.png" class="img-thumbnail me-3" alt="Logo corporativo">
+                  <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"  aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon border-5 my-lg-0"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                      <li class="nav-item active">
+                        <a class="navbar-brand nav-link text-primary"  href="/index.html"><h4>Inicio</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html"><h4>Computadores Portátiles</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html"><h4>Computadores Escritorio</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html"><h4>Tabletas</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html"><h4>Impresoras</h4></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-primary" hhref="index.html"><h4>Ayuda</h4></a>
+                      </li>
+                    </ul>
+                   
+                    <div class="d-grid gap-2 d-md-block d-md-flex justify-content-md-end">
+                      <a class="btn btn-primary btn-primary" type="submit" name="accion" href="login.html" role="button" value="Ingresar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 20 20">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>Mi cuenta</a>
+                      <a class="btn btn-primary btn-primary " type="submit" name="accion" href="registro.html" role="button" value="Ingresar"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 20 20">
+                          <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        </svg>
+                        Registrarse</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+      
+            </span>
+           
+          </header> 
+ 
+    <br> <br> <br> <br> 
+     <!-- formulario de login -->    
+    <div class="container center-block ">
+        <div class="row justify-content-center">
+            <div class="card" style="width: 30rem;">
+    
+    
+                <div class="card-body">
+                    <small class="form-text text-muted">En este panel podras loguearte al sistema.</small>
+                </p>
+                    <form method="POST" action="principal.html">
+                        <div class="form-group">
+                            <label for="inputdocumento" class="col-sm-5 col-form-label">Documento</label>
+                            <input type="text" class="form-control" name="txtusuario">
+                            <small id="emailHelp" class="form-text text-muted">Ingrese su documento sin espacios ni
+                                puntos</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-5 col-form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="txtpassword">
+                        </div>
+                        
+                        <a class="btn btn-primary mt-3" type="sumit" name="accion" href="vista_principal/principal.html"
+                            role="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                            Ingresar</a>
+                        <a class="btn btn-primary mt-3" href="registro.html" role="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 20 20">
+                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                              </svg>
+                            Registrarse</a>
+                    </form>
+                </div>
+    
+    
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer featurette-divider">
+        <hr/>
+         <div class="container">
+             <p>
+                 Proyecto realizado por Equipo 6
+             </p>
+             <address>
+                Datos de interes<br />
+                 Misión TIC 2022<br />
+                 Módulo 3-G47<br />
+                 Desarrollo de software
+             </address>
+             <p>
+                 &#169; versión del producto 2021
+             </p>
+             <div class="d-flex mb-1 float-end">
+               <h6 class="m-0 h6">Siguenos en:</h6>
+               <img src="/imagenes/facebook.png" class="border-3" alt="...">
+               <img src="/imagenes/instagram.png" class="border-3 rounded" alt="...">
+               <img src="/imagenes/youtube.png" class="border-3 rounded" alt="...">
+               
+              
+           </div>
+             
+         </div>
+     </footer>
+       
+            <script src="/js/bootstrap.bundle.min.js" ></script>
+    </body>
+</html>

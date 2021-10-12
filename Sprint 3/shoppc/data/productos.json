@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"marca": "HP PAVILION",
+		"imagen": "/imagenes/hp1.jpg",
+		"precio": "5000",
+		"detalles": ["8 GB RAM", "COLOR PLATEADO", "256 GB DISCO SSD"]
+	},
+	{
+		"id": 2,
+		"marca": "LENOVO",
+		"imagen": "/imagenes/lenovo.jpg",
+		"precio": "4000",
+		"detalles": ["4 GB RAM", "COLOR PLATEADO", "1 TB DD"]
+	},
+	{
+		"id": 3,
+		"marca": "HUAWEI",
+		"imagen": "/imagenes/huawei.jpg",
+		"precio": "5769",
+		"detalles": ["8 GB RAM", "COLOR NEGRO", "256 GB DD"]
+	},
+	{
+		"id": 4,
+		"marca": "SAMSUNG",
+		"imagen": "/imagenes/samsung.jpg",
+		"precio": "2599",
+		"detalles": ["4 GB RAM", "COLOR BLANCO", "64 GB DD"]
+	}
+	
+	
+]
