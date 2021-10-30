@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#cargar-usuarios").click(function(){
+                console.log("prueba");
+
+                $.get("http://127.0.0.1:8080/usuario", function(data){
+                    console.log(data);
+                    $("#cuerpo-tb-usuarios").html("");
+                    for(let i=0; i<data.length; i++){
+                        let tr=`<tr>
+                            <td>`+data[i].id+`</td>
+                            <td>`+data[i].nombre+`</td>
+                            <td>`+data[i].apellido+`</td>
+                            <td>`+data[i].email+`</td>
+                            <td>`+data[i].categoria+`</td>
+                                </tr>`;
+                        $("#cuerpo-tb-usuarios").append(tr)
+                    }
+                })
+            })
+        })
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/iconos/css/all.min.css" rel="stylesheet">
+    <title>Buscar PCs-Portatiles-Tablets-Impresoras</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>USUARIOS - NOVEDADES - TIPS INFORMATIVOS</h1>
+        </header>
+
+        <nav class="nav">
+            <button class="button-nav"><a href="index.html" class="ancla">Inicio</a></button>
+            <button class="button-nav"><a href="desktops.html" class="ancla">PCs Escritorio</a></button>
+            <button class="button-nav"><a href="laptops.html" class="ancla">Portátiles</a></button>
+            <button class="button-nav"><a href="tablets.html" class="ancla">Tabletas</a></button>
+            <button class="button-nav"><a href="printers.html" class="ancla">Impresoras</a></button>
+            <button class="button-nav button-foco"><a href="usuarios.html" class="ancla">Usuarios</a></button>
+        </nav>
+
+        <section class="sec1">
+            <form class="form-buscadores">
+                <p>Id: numero entero</p>
+                <input type="text" id="buscar" name="buscar">
+                <input type="submit" class="btn-buscar-id" id="cargar-id" name="buscar-id" value="Buscar por Id"><br><br>
+                <p>Categoria: numero entero</p>
+                <input type="text" id="buscar-cat" name="buscar-cat">
+                <input type="submit" class="btn-buscar-cate" id="buscar-categoria" name="buscar-categoria" value="Buscar por Categoria"><br><br>
+                <input type="submit" class="btn-cargar-todos button-foco" id="cargar-usuarios" name="cargar" value="Cargar Todos"><br>
+            </form>
+        </section>
+
+        <section class="sec2">
+            <form class="form-usuario">
+                <p>Nombre:</p>
+                <input type="text" name="nombre" id="nombre" > <br><br>
+                <p>Apellido:</p>
+                <input type="text" name="apellido" id="apellido" > <br><br>
+                <p>Correo electronico:</p>
+                <input type="text" name="email" id="email" > <br><br>
+                <p>Categoria:</p>
+                <input type="text" name="categoria" id="categoria" > <br><br>
+                <input type="submit" class="btn-guardar-usuario" value="Guardar usuario" id="guardar_usuario"><br>
+            </form>
+        </section>
+
+        <section class="sec3">
+            <table class="tb-usuarios">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Categoria</th>
+                </thead>
+                <tbody id="cuerpo-tb-usuarios">
+
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <div >
+                <button class="contenedor"><i class="fas fa-envelope"></i></button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

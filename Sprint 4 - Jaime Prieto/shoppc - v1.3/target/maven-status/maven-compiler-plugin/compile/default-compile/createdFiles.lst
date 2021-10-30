@@ -1,0 +1,6 @@
+co\edu\unab\shoppc\services\UsuarioService.class
+co\edu\unab\shoppc\ServletInitializer.class
+co\edu\unab\shoppc\repositories\UsuarioRepository.class
+co\edu\unab\shoppc\models\UsuarioModel.class
+co\edu\unab\shoppc\controllers\UsuarioController.class
+co\edu\unab\shoppc\ShoppcApplication.class
