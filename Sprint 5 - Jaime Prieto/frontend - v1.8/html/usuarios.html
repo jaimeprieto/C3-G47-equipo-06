@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <title>Buscar PCs-Portatiles-Tablets-Impresoras</title>
+    <style>
+        /*#actualizar-usuario{
+            display: none;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>USUARIOS - NOVEDADES - TIPS INFORMATIVOS</h1>
+        </header>
+
+        <nav class="nav">
+            <button class="button-nav"><a href="index.html" class="ancla">Inicio</a></button>
+            <button class="button-nav"><a href="desktops.html" class="ancla">PCs Escritorio</a></button>
+            <button class="button-nav button-foco"><a href="usuarios.html" class="ancla">Usuarios</a></button>
+        </nav>
+
+        <section class="sec1">
+            <div class="form-buscadores" >
+                <p>Id: numero entero</p>
+                <input type="number" id="buscar" name="buscar">
+                <input type="submit" class="btn-buscar-id" id="buscar-id" name="buscar-id" value="Buscar por Id"><br><br>
+                <p>Categoria: numero entero</p>
+                <input type="number" id="buscar-cat" name="buscar-cat">
+                <input type="submit" class="btn-buscar-cate" id="buscar-categoria" name="buscar-categoria" value="Buscar por Categoria"><br><br>
+                <button class="btn-cargar-todos button-foco" id="cargar-usuarios" name="cargar">Cargar Todos</button><br>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <form class="form-usuario">                
+                <input type="hidden" name="id" id="id" >
+                <p>Nombre:</p>
+                <input type="text" name="nombre" id="nombre" > <br><br>
+                <p>Apellido:</p>
+                <input type="text" name="apellido" id="apellido" > <br><br>
+                <p>Correo electronico:</p>
+                <input type="text" name="email" id="email" > <br><br>
+                <p>Categoria:</p>
+                <input type="text" name="categoria" id="categoria" > <br><br>
+                <input type="button" class="btn-guardar-usuario" value="Guardar usuario" id="guardar-usuario">
+                <input type="button" class="btn-guardar-usuario" value="Actualizar usuario" id="actualizar-usuario">
+                <input type="button" class="btn-guardar-usuario" value="Cancelar" id="cancelar-actualizar-usuario">
+                <br>
+            </form>
+        </section>
+
+        <section class="sec3">
+            <table class="tb-usuarios">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Categoria</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </thead>
+                <tbody id="cuerpo-tb-usuarios">
+
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <h3>Espacio para comunicación y redes soiales</h3>
+        </footer>
+    </div>
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="/script/usuarios.js"></script>
+    <!--        src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">-->
+</body>
+</html>

@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height:auto;
+}
+body {
+    background: #000000;
+    font-family:sans-serif;
+    color:#FFF;
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+}
+
+.container {
+    background-color:#F2F2F2;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.container {
+    grid-template-columns: 41.25rem Auto;
+    grid-template-rows: 15% 7% 22% 42% Auto;
+    grid-template-areas:
+                    "header  header"  
+                    "nav     nav"      
+                    "secc1   secc2"   
+                    "secc3   secc2"   
+                    "footer  footer";
+}
+
+header{
+    background:red;
+    grid-area: header;
+}
+
+.nav {
+    background: #03045E;
+    grid-area: nav;
+    padding: 13px 0px;
+}
+
+.sec1 {
+    grid-area: secc1;
+    background: #F2F2F2;
+}
+
+.sec2 {
+    grid-area: secc2;
+    background: #F2F2F2;
+}
+
+.sec3 {
+    grid-area: secc3;
+    background: #F2F2F2;
+    color: #969696;
+    border: solid #C0C0C0 1px;
+    margin: 0 10px 31px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color:#F2F2F2;
+    grid-area: footer;
+    border: solid #C0C0C0 1px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.header, .footer, .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-nav {
+    background: #03045E;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px;
+    border-bottom: 3px #03045E;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.button-nav.button-foco {
+    background-color: #0077B6;
+    border-color: #0077B6;
+    height: 38px;
+    cursor: pointer;
+}
+
+.button-nav:hover {
+    background-color: #0077B6;
+    border-color: #0077B6;
+    
+}
+
+.button-nav .ancla {
+    text-decoration: none;
+    color:#FFF;
+    font:bolder;
+    
+}
+
+.sec1 .form-buscadores {
+    font-size: 0.8rem;
+    padding: 10px 22px;
+    width: 640.2px;
+    height: 100%;
+    border: solid #C0C0C0 1px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    color:#808080;  
+}
+
+.sec1 .form-buscadores {
+    margin:auto;
+}
+
+.sec1 .form-buscadores input {
+    background-color: #FFF;
+    padding: 10px;
+    border: solid 1px #999;
+    outline: none;
+    width: 220px;
+    
+}
+
+.sec1 .form-buscadores .btn-buscar-id {
+    width: 35%;
+    background:#03045E;
+    color:#FFF;
+    border-radius: 5px; 
+    cursor: pointer;     
+}
+
+.sec1 .form-buscadores .btn-buscar-id:hover {
+    background-color: #009900;
+    border-color: #009900;
+}
+
+.sec1 .form-buscadores .btn-buscar-cate {
+    width: 35%;
+    background:#03045E;
+    color:#FFF;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.sec1 .form-buscadores .btn-buscar-cate:hover {
+    background-color: #009900;
+    border-color: #009900;
+}
+
+.sec1 .form-buscadores .btn-cargar-todos {
+    width: 30%;
+    background:red;
+    padding: 10px;
+    color:#FFF;
+    border-radius: 5px;
+    border: 0px;
+    margin-left: 35%;
+    cursor: pointer;   
+}
+
+.sec1 .form-buscadores .btn-cargar-todos:hover {
+    background-color: #009900;
+    border-color: #009900;
+}
+
+.sec2 .form-usuario {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    color:#808080;
+    border: solid #C0C0C0 1px;
+}
+
+.sec2 .form-usuario {
+    margin: auto;
+    padding: 10px 22px;
+}
+
+.sec2 .form-usuario input {
+    
+    padding: 10px;
+    border: solid 1px #A6A6A6;
+    outline: none;
+    width: 260px;
+}
+
+.sec2 .form-usuario .btn-guardar-usuario {
+    width: 50%;
+    background:red;
+    color:#FFF;
+    border-radius: 5px; 
+    margin-left: 25%; 
+    cursor: pointer; 
+}
+
+.sec2 .form-usuario .btn-guardar-usuario:hover {
+    background-color: #009900;
+    border-color: #009900;
+}
+
+.sec3 .tb-usuarios {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    color:#B2B2B2;
+}
+
+.sec3 .tb-usuarios, th, td {
+    background-color: #FFF;
+    font-size: 0.85rem;
+    border: 1px solid #A6A6A6;
+    padding: 5px 5px;
+    border-collapse: collapse;
+    color:#333333;
+}
+
+.sec3 .tb-usuarios th{
+    background-color: #009900;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color:#FFF;
+}
+
+.footer {
+    color: #808080;
+}

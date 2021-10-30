@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/styles-desktops.css" rel="stylesheet">
+    <title>Buscar Computadoras de escritotrio</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>BANNER DE COMPUTADORAS DE ESCRITORIO</h1>
+        </header>
+
+        <nav class="nav">
+            <button class="button-nav"><a href="index.html" class="ancla">Inicio</a></button>
+            <button class="button-nav  button-foco"><a href="desktops.html" class="ancla">PCs Escritorio</a></button>
+            <button class="button-nav"><a href="usuarios.html" class="ancla">Usuarios</a></button>
+        </nav>
+
+        <section class="sec1">
+            <div class="form-buscadores" >
+                <p>Id: numero entero</p>
+                <input type="text" id="buscar" name="buscar">
+                <input type="submit" class="btn-buscar-id" id="buscar-id" name="buscar-id" value="Buscar por Id"><br><br>
+                <p>Categoria: numero entero</p>
+                <input type="text" id="buscar-cat" name="buscar-cat">
+                <input type="submit" class="btn-buscar-cate" id="buscar-categoria" name="buscar-categoria" value="Buscar por Categoria"><br><br>
+                <button class="btn-cargar-todos button-foco" id="cargar-computadores" name="cargar">Cargar Todos</button><br>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <form class="form-computador">                
+                <input type="hidden" name="id" id="id" >
+                <p>Referencia:</p>
+                <input type="text" name="referencia" id="referencia" > 
+                <p>Marca:</p>
+                <input type="text" name="marca" id="marca" > 
+                <p>Capacidad Disco Duro (GB):</p>
+                <input type="text" name="dduro" id="dduro" > 
+                <p>Memoria RAM (GB):</p>
+                <input type="text" name="mram" id="mram" > 
+                <p>Procesador:</p>
+                <input type="text" name="procesador" id="procesador" > 
+                <p>Pantalla (Pulg):</p>
+                <input type="text" name="pantalla" id="pantalla" > 
+                <p>Precio ($COP):</p>
+                <input type="text" name="precio" id="precio" > 
+                <p>Categoria:</p>
+                <input type="text" name="categoria" id="categoria" > <br><br>
+                <input type="button" class="btn-guardar-computador" value="Guardar computador" id="guardar-computador">
+                <input type="button" class="btn-guardar-computador" value="Actualiza computador" id="actualizar-computador">
+                <input type="button" class="btn-guardar-computador" value="Cancelar" id="cancelar-actualizar-computador">
+                <br>
+            </form>
+        </section>
+
+        <section class="sec3">
+            <table class="tb-computadores">
+                <thead>
+                    <th>Id</th>
+                    <th>Referencia</th>
+                    <th>Marca</th>
+                    <th>DDuro</th>
+                    <th>RAM</th>
+                    <th>Procesador</th>
+                    <th>Pantalla</th>
+                    <th>Precio</th>
+                    <th>Categoria</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </thead>
+                <tbody id="cuerpo-tb-computadores">
+
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <h3>Espacio para comunicación y redes soiales</h3>
+        </footer>
+        
+    </div>
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="/script/desktops.js"></script>
+</body>
+</html>
